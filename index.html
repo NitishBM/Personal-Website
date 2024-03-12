@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5080f49ccc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Images/Nitish..png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Web Developer | UI/UX Designer</p>
+                <h1>I'm <span>Nitish Mashal</span> Based in Bangalore, Karnataka, India</h1>                
+            </div>
+        </div>
+    </div>
+
+    <!-- ************************About******************* -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/Comp.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1> 
+                    <p>
+                        Frontend Web Developer with 1.4 years of dedicated expertise in the Angular Framework.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Trainee Associate System Analyst | NSEIT LTD | Mar-2022 - Jun-2023</span><br>
+                                Project <Strong>Resource Monitor UI</Strong> <br>
+                                Successfully developed a <Strong>Resource Monitor UI</Strong> for NSE India using Angular.
+                                This included creating web pages like login, dashboard, and logout, integrating real-time
+                                graphs for CPU and Memory Usage trends.
+                                Implementing data flow between frontend and backend, developing a log window for system
+                                logs.
+                                Ensuring responsiveness across devices, and maintaining high-quality code through practices
+                                like code reviews.
+                            </li>
+                        </ul>
+                    </div>  
+                    
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS Applications</li>
+                        </ul>
+                    </div> 
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelors Of Engineering | BLDEA's Engineering College, Bijapur</span><br>Computer Science And Engineering</li>
+                            <li><span>Diploma | BLDEA's Polytechnic, Bijapur</span><br>Computer Science And Engineering</li>
+                        </ul>
+                    </div> 
+
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <!-- ***************************Projects*************************** -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1> 
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias cumque illo commodi a aperiam? Laborum unde eius dicta ipsam in?</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias cumque illo commodi a aperiam? Laborum unde eius dicta ipsam in?</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias cumque illo commodi a aperiam? Laborum unde eius dicta ipsam in?</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **********************************Portfolio******************************* -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1> 
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./Images/work.png" alt="">
+                        <div class="layer">
+                            <h3>Portfolio WebSite</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ad architecto quis similique molestiae fugit nihil ea dolorum dolorem vel.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+
+    <!-- ****************************Contact***************************** -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mashalnitish@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-7259862989</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/nitish-mashal-04735a201/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/NitishBM?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/nitish_mashal/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100010072237591" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="Images/Nitish_Mashal_Resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy | All Rights Reversed 2024
+        </div>
+    </div>
+
+    
+    <script src="./script.js"></script>
+    <script src="./sidemenu.js"></script>
+    <script src="./googlesheet.js"></script>
+</body>
+</html>
